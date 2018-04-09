@@ -1,0 +1,9 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html{font-size: 100px;}
+.img{width: 75%;float: left;height: 1.5rem;background: white;overflow: hidden;}
+.img img{width: 100%;max-width: 3rem;}
+#segmentedControlContents{height: calc(100% - 1.5rem);}
+.section-contain{min-height: 2rem;background: white;display: grid;grid-template-columns: 1fr 1fr 1fr;grid-gap: .05rem;padding: .1rem .05rem 0;text-align: center;}
+.section-item{font-size: .12rem;}
+.section-item img{width: 100%;}
+.section-name{color: #333;}

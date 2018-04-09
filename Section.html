@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>科室</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--标准mui.css-->
+    <link rel="stylesheet" href="theme/mui/css/mui.css">
+    <link rel="stylesheet" type="text/css" href="css/section.css">
+    <style>
+    .mui-row.mui-fullscreen>[class*="mui-col-"] {
+        height: 100%;
+    }
+
+    .mui-col-xs-3,
+    .mui-col-xs-9 {
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    .mui-segmented-control .mui-control-item {
+        line-height: 50px;
+        width: 100%;
+    }
+
+    .mui-control-content {
+        display: block;
+    }
+
+    .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+        background-color: #fff;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">侧面选项卡-div模式</h1>
+    </header> -->
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item" href="index.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+        <a class="mui-tab-item" href="expert.html">
+			<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+			<span class="mui-tab-label">专家</span>
+		</a>
+        <a class="mui-tab-item mui-active" href="Section.html">
+			<span class="mui-icon mui-icon-contact"></span>
+			<span class="mui-tab-label">科室</span>
+		</a>
+        <a class="mui-tab-item" href="yuyue.html">
+			<span class="mui-icon mui-icon-gear"></span>
+			<span class="mui-tab-label">预约</span>
+		</a>
+    </nav>
+    <div class="mui-content mui-row mui-fullscreen">
+        <div class="mui-col-xs-3">
+            <div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+            	<a class="mui-control-item mui-active" data-index="0" href="#content1">内科</a>
+            	<a class="mui-control-item" data-index="1" href="#content2">耳鼻喉科</a>
+            	<a class="mui-control-item" data-index="2" href="#content3">外科</a>
+            	<a class="mui-control-item" data-index="3" href="#content4">妇科</a>
+            	<a class="mui-control-item" data-index="4" href="#content5">儿科</a>
+            	<a class="mui-control-item" data-index="5" href="#content6">血液科</a>
+            	<a class="mui-control-item" data-index="6" href="#content7">神经科</a>
+            </div>
+        </div>
+        <div class="img">
+        	<img src="http://assets.huibo.com/CompanyImages/Photo/114076500/1110111130429_369.jpg" alt="">
+        </div>
+        <div id="segmentedControlContents" class="mui-col-xs-9" style="border-left: 1px solid #c8c7cc;">
+            <div id="content1" class="mui-control-content">
+                <div class="section-contain">
+                	<div class="section-item">
+                		<a href="">
+                			<img src="img/1.png" alt="">
+                			<div class="section-name">神经内科</div>
+                		</a>
+                	</div>
+                	<div class="section-item">
+                		<a href="">
+                			<img src="img/1.png" alt="">
+                			<div class="section-name">心血管内科</div>
+                		</a>
+                	</div>
+                	<div class="section-item">
+                		<a href="">
+                			<img src="img/1.png" alt="">
+                			<div class="section-name">普通内科</div>
+                		</a>
+                	</div>
+                	<div class="section-item">
+                		<a href="">
+                			<img src="img/1.png" alt="">
+                			<div class="section-name">消化内科</div>
+                		</a>
+                	</div>
+                	<div class="section-item">
+                		<a href="">
+                			<img src="img/1.png" alt="">
+                			<div class="section-name">呼吸内科</div>
+                		</a>
+                	</div>
+                	<div class="section-item">
+                		<a href="">
+                			<img src="img/1.png" alt="">
+                			<div class="section-name">内分泌科</div>
+                		</a>
+                	</div>
+                	<div class="section-item">
+                		<a href="">
+                			<img src="img/1.png" alt="">
+                			<div class="section-name">肾病内科</div>
+                		</a>
+                	</div>
+                	<div class="section-item">
+                		<a href="">
+                			<img src="img/1.png" alt="">
+                			<div class="section-name">血液内科</div>
+                		</a>
+                	</div>
+                	<div class="section-item">
+                		<a href="">
+                			<img src="img/1.png" alt="">
+                			<div class="section-name">感染内科</div>
+                		</a>
+                	</div>
+                	<div class="section-item">
+                		<a href="">
+                			<img src="img/1.png" alt="">
+                			<div class="section-name">老年病内科</div>
+                		</a>
+                	</div>
+                	<div class="section-item">
+                		<a href="">
+                			<img src="img/1.png" alt="">
+                			<div class="section-name">风湿免疫内科</div>
+                		</a>
+                	</div>
+                	<div class="section-item">
+                		<a href="">
+                			<img src="img/1.png" alt="">
+                			<div class="section-name">透析科</div>
+                		</a>
+                	</div>
+                </div>
+            </div>
+            <div id="content2" class="mui-control-content">
+                <div class="section-contain">
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">神经内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">心血管内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">普通内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">消化内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">呼吸内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">内分泌科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">肾病内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">血液内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">感染内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">老年病内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">风湿免疫内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">透析科</div>
+                	</div>
+                </div>
+            </div>
+            <div id="content3" class="mui-control-content">
+                <div class="section-contain">
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">神经内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">心血管内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">普通内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">消化内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">呼吸内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">内分泌科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">肾病内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">血液内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">感染内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">老年病内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">风湿免疫内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">透析科</div>
+                	</div>
+                </div>
+            </div>
+            <div id="content4" class="mui-control-content">
+				<div class="section-contain">
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">神经内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">心血管内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">普通内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">消化内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">呼吸内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">内分泌科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">肾病内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">血液内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">感染内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">老年病内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">风湿免疫内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">透析科</div>
+                	</div>
+                </div>
+            </div>
+            <div id="content5" class="mui-control-content">
+                <div class="section-contain">
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">神经内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">心血管内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">普通内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">消化内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">呼吸内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">内分泌科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">肾病内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">血液内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">感染内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">老年病内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">风湿免疫内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">透析科</div>
+                	</div>
+                </div>
+            </div>
+            <div id="content6" class="mui-control-content">
+                <div class="section-contain">
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">神经内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">心血管内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">普通内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">消化内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">呼吸内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">内分泌科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">肾病内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">血液内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">感染内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">老年病内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">风湿免疫内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">透析科</div>
+                	</div>
+                </div>
+            </div>
+            <div id="content7" class="mui-control-content">
+                <div class="section-contain">
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">神经内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">心血管内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">普通内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">消化内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">呼吸内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">内分泌科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">肾病内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">血液内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">感染内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">老年病内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">风湿免疫内科</div>
+                	</div>
+                	<div class="section-item">
+                		<img src="img/1.png" alt="">
+                		<div class="name">透析科</div>
+                	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="theme/mui/js/mui.js"></script>
+    <script>
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+
+    (function() {
+        var controlsElem = document.getElementById("segmentedControls");
+        var contentsElem = document.getElementById("segmentedControlContents");
+        var controlListElem = controlsElem.querySelectorAll('.mui-control-item');
+        var contentListElem = contentsElem.querySelectorAll('.mui-control-content');
+        var controlWrapperElem = controlsElem.parentNode;
+        var controlWrapperHeight = controlWrapperElem.offsetHeight;
+        var controlMaxScroll = controlWrapperElem.scrollHeight - controlWrapperHeight; //左侧类别最大可滚动高度
+        var maxScroll = contentsElem.scrollHeight - contentsElem.offsetHeight; //右侧内容最大可滚动高度
+        var controlHeight = controlListElem[0].offsetHeight; //左侧类别每一项的高度
+        var controlTops = []; //存储control的scrollTop值
+        var contentTops = [0]; //存储content的scrollTop值
+        var length = contentListElem.length;
+        for (var i = 0; i < length; i++) {
+            controlTops.push(controlListElem[i].offsetTop + controlHeight);
+        }
+        for (var i = 1; i < length; i++) {
+            var offsetTop = contentListElem[i].offsetTop;
+            if (offsetTop + 100 >= maxScroll) {
+                var height = Math.max(offsetTop + 100 - maxScroll, 100);
+                var totalHeight = 0;
+                var heights = [];
+                for (var j = i; j < length; j++) {
+                    var offsetHeight = contentListElem[j].offsetHeight;
+                    totalHeight += offsetHeight;
+                    heights.push(totalHeight);
+                }
+                for (var m = 0, len = heights.length; m < len; m++) {
+                    contentTops.push(parseInt(maxScroll - (height - heights[m] / totalHeight * height)));
+                }
+                break;
+            } else {
+                contentTops.push(parseInt(offsetTop));
+            }
+        }
+        contentsElem.addEventListener('scroll', function() {
+            var scrollTop = contentsElem.scrollTop;
+            for (var i = 0; i < length; i++) {
+                var offsetTop = contentTops[i];
+                var offset = Math.abs(offsetTop - scrollTop);
+                //						console.log("i:"+i+",scrollTop:"+scrollTop+",offsetTop:"+offsetTop+",offset:"+offset);
+                if (scrollTop < offsetTop) {
+                    if (scrollTop >= maxScroll) {
+                        onScroll(length - 1);
+                    } else {
+                        onScroll(i - 1);
+                    }
+                    break;
+                } else if (offset < 20) {
+                    onScroll(i);
+                    break;
+                } else if (scrollTop >= maxScroll) {
+                    onScroll(length - 1);
+                    break;
+                }
+            }
+        });
+        var lastIndex = 0;
+        //监听content滚动
+        var onScroll = function(index) {
+            if (lastIndex !== index) {
+                lastIndex = index;
+                var lastActiveElem = controlsElem.querySelector('.mui-active');
+                lastActiveElem && (lastActiveElem.classList.remove('mui-active'));
+                var currentElem = controlsElem.querySelector('.mui-control-item:nth-child(' + (index + 1) + ')');
+                currentElem.classList.add('mui-active');
+                //简单处理左侧分类滚动，要么滚动到底，要么滚动到顶
+                var controlScrollTop = controlWrapperElem.scrollTop;
+                if (controlScrollTop + controlWrapperHeight < controlTops[index]) {
+                    controlWrapperElem.scrollTop = controlMaxScroll;
+                } else if (controlScrollTop > controlTops[index] - controlHeight) {
+                    controlWrapperElem.scrollTop = 0;
+                }
+            }
+        };
+        //滚动到指定content
+        var scrollTo = function(index) {
+            contentsElem.scrollTop = contentTops[index];
+        };
+        mui(controlsElem).on('tap', '.mui-control-item', function(e) {
+            scrollTo(this.getAttribute('data-index'));
+            return false;
+        });
+    })();
+    </script>
+</body>
+
+</html>

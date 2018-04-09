@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>专家</title>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="theme/mui/css/mui.css">
+    <link rel="stylesheet" type="text/css" href="css/expert.css">
+</head>
+
+<body>
+    <!-- <header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">图片轮播</h1>
+		</header> -->
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item" href="index.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+        <a class="mui-tab-item mui-active" href="expert.html">
+				<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+				<span class="mui-tab-label">专家</span>
+			</a>
+        <a class="mui-tab-item" href="Section.html">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">科室</span>
+			</a>
+        <a class="mui-tab-item" href="yuyue.html">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">预约</span>
+			</a>
+    </nav>
+    <div class="slider-contain">
+        <div class="slider-title">金牌专家</div>
+        <div id="slider" class="mui-slider">
+            <div class="mui-slider-group mui-slider-loop">
+                <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+						<img src="img/20150123223363.jpg">
+					</a>
+                </div>
+                <!-- 第一张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+						<img src="img/1-15122315451a24.png">
+					</a>
+                </div>
+                <!-- 第二张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+						<img src="img/20140730050952696.jpg">
+					</a>
+                </div>
+                <!-- 第三张 -->
+                <div class="mui-slider-item">
+                    <a href="#">
+						<img src="img/20150123223363.jpg">
+					</a>
+                </div>
+                <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="#">
+						<img src="img/1-15122315451a24.png">
+					</a>
+                </div>
+            </div>
+            <div class="mui-slider-indicator">
+                <div class="mui-indicator mui-active"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+            </div>
+        </div>
+    </div>
+    <div class="type-contain">
+        <div class="type-item type-active">门诊</div>
+        <div class="type-item">脑外科</div>
+        <div class="type-item">妇科</div>
+        <div class="type-item">妇产科</div>
+        <div class="type-item">血液科</div>
+        <div class="type-item">皮肤科</div>
+        <div class="type-item">耳鼻喉科</div>
+        <div class="type-item">儿科</div>
+    </div>
+    <div class="grid-contain">
+        <div class="grid-item">
+            <a href="">
+                <img src="http://img2.cache.netease.com/jiankang/2016/1/26/20160126180636011f7_550.jpg">
+                <div class="expert-name">李秀莲</div>
+                <div class="expert-info">20多年经验的血液科医师20多年经验的血液科医师</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="">
+                <img src="http://img2.cache.netease.com/jiankang/2016/1/26/20160126180636011f7_550.jpg">
+                <div class="expert-name">李秀莲</div>
+                <div class="expert-info">20多年经验的血液科医师20多年经验的血液科医师</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="">
+                <img src="http://img2.cache.netease.com/jiankang/2016/1/26/20160126180636011f7_550.jpg">
+                <div class="expert-name">李秀莲</div>
+                <div class="expert-info">20多年经验的血液科医师20多年经验的血液科医师</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="">
+                <img src="http://img2.cache.netease.com/jiankang/2016/1/26/20160126180636011f7_550.jpg">
+                <div class="expert-name">李秀莲</div>
+                <div class="expert-info">20多年经验的血液科医师20多年经验的血液科医师</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="">
+                <img src="http://img2.cache.netease.com/jiankang/2016/1/26/20160126180636011f7_550.jpg">
+                <div class="expert-name">李秀莲</div>
+                <div class="expert-info">20多年经验的血液科医师20多年经验的血液科医师</div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="">
+                <img src="http://img2.cache.netease.com/jiankang/2016/1/26/20160126180636011f7_550.jpg">
+                <div class="expert-name">李秀莲</div>
+                <div class="expert-info">20多年经验的血液科医师20多年经验的血液科医师</div>
+            </a>
+        </div>
+    </div>
+    <div class="bottom-padding"></div>
+    <script src="theme/mui/js/mui.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+    let slider = mui("#slider");
+    slider.slider({
+        interval: 3000
+    })
+
+    mui(".type-contain").on("tap", ".type-item", function(event) {
+        let types = mui(".type-item");
+        let requestData = this.innertHTML;
+        let listContain = mui(".grid-contain");
+        let s = document.getElementsByClassName("grid-contain")[0];
+        s.innerHTML = '<span class="mui-spinner"></span>';
+        for (let i = 0; i < types.length; i++) {
+            types[i].classList.remove("type-active");
+        }
+        this.classList.add("type-active");
+        mui.ajax("test.json", {
+            data: requestData,
+            dataType: "json",
+            type: "get",
+            timeout: 10000,
+            success: function(res) {
+                setTimeout(function() {
+                    s.innerHTML = '';
+                    for (let j = 0; j < res.length; j++) {
+                        let grid = document.createElement("div");
+                        let gridImg = document.createElement("img");
+                        let name = document.createElement("div");
+                        let info = document.createElement("div");
+                        grid.setAttribute("class", "grid-item");
+                        gridImg.setAttribute("src", res[j].src);
+                        name.setAttribute("class", "expert-name");
+                        name.innerHTML = res[j].name;
+                        info.setAttribute("class", "expert-info");
+                        info.innerHTML = res[j].info;
+                        grid.appendChild(gridImg);
+                        grid.appendChild(name);
+                        grid.appendChild(info);
+                        s.appendChild(grid);
+                    }
+                }, 1000)
+            },
+            error: function(res) {
+                console.log(res);
+            }
+        })
+    })
+    </script>
+</body>
+
+</html>

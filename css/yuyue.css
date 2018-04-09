@@ -1,0 +1,22 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html{font-size: 100px;}
+.top-bg{width: 100%;max-height: 2rem;overflow: hidden;}
+.top-bg img{width: 100%;}
+.form-contain{width: 95%;margin:0 auto;transform: translateY(-.3rem);font-size: .16rem;background: white;padding-bottom: .2rem;border-radius: 3px;}
+.form-title{position: relative;background: #DCDCDC;color: #333;padding: .05rem .1rem;padding-left: .2rem;}
+.form-title:after{content: "";position: absolute;width: 3px;height: 50%;left: .1rem; top: 50%;transform: translateY(-50%);background: #2F85EE;}
+.form{background: white;margin-bottom: .2rem;box-shadow: 0 0 10px #F5F5F5;}
+.mui-input-row{border-bottom: 1px solid rgba(200,200,200,.5);}
+.mui-input-row span{font-weight: bold;padding-right: .05rem;}
+#date{position: relative;}
+#datePlaceholder{position: absolute;width: 65%;height: 100%;top: 0;right: 0;}
+.btn-contain{display: flex;align-items: center;font-size: .16rem;padding: 0 .1rem;margin-bottom: .4rem;}
+.btn-space{width: .2rem;}
+.btn-submit,.btn-reset{flex: 1;border-radius: 5px;box-shadow: 1px 1px 3px #AAA;text-align: center;padding: .08rem;color: white;}
+.btn-submit{ background: #00c6ff;background: -webkit-linear-gradient(to right, #00c6ff, #0072ff);background: linear-gradient(to right, #00c6ff, #0072ff);}
+.btn-reset{background: #C9C9C9;}
+.callPhone{width: 60%;padding: .08rem;border:2px solid #08a4ee;color: #08a4ee;text-align: center;margin: 0 auto;border-radius: 300px;font-size: .16rem;box-shadow: 0 0 20px #E6F7FE;}
+.callPhone a{color: #08a4ee;}
+/*修改mui*/
+input, textarea, select{font-size: .16rem;}
+.mui-content{background: white;}

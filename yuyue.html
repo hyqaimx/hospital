@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="theme/mui/css/mui.css">
+    <link rel="stylesheet" type="text/css" href="theme/mui/css/mui.picker.min.css">
+    <link rel="stylesheet" type="text/css" href="css/yuyue.css">
+
+    <title>预约</title>
+</head>
+
+<body>
+    <!-- <header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">图片轮播</h1>
+		</header> -->
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item" href="index.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+        <a class="mui-tab-item" href="expert.html">
+			<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+			<span class="mui-tab-label">专家</span>
+		</a>
+        <a class="mui-tab-item" href="Section.html">
+			<span class="mui-icon mui-icon-contact"></span>
+			<span class="mui-tab-label">科室</span>
+		</a>
+        <a class="mui-tab-item mui-active" href="yuyue.html">
+			<span class="mui-icon mui-icon-gear"></span>
+			<span class="mui-tab-label">预约</span>
+		</a>
+    </nav>
+    
+    <div class="mui-content mui-row mui-fullscreen">
+        <div class="top-bg">
+            <img src="http://file06.16sucai.com/2016/0229/c257eb7e467a08bd30cc81e04a71c175.jpg" alt="">
+        </div>
+        <div class="form-contain">
+            <div class="form">
+                <div class="form-title">快速预约通道</div>
+                <div class="mui-input-row">
+                    <label for="name"><span>·</span>您的姓名</label>
+                    <input id="name" type="text" class="mui-input-clear" placeholder="仅用于预约使用" data-input-clear="5">
+                </div>
+                <div class="mui-input-row">
+                    <label for="phone"><span>·</span>您的电话</label>
+                    <input id="phone" type="text" class="mui-input-clear" placeholder="请输入您的手机号" data-input-clear="5">
+                </div>
+                <div class="mui-input-row">
+                    <label for="date"><span>·</span>预约日期</label>
+                    <input id="date" type="text" class="mui-input-clear" placeholder="选择预约日期" data-input-clear="5" disabled="true">
+                    <span id="datePlaceholder"></span>
+                </div>
+                <div class="mui-input-row">
+                    <label for="yuyue"><span>·</span>您想预约</label>
+                    <input id="yuyue" type="text" class="mui-input-clear" placeholder="检查/病种/专家" data-input-clear="5">
+                </div>
+                <div class="mui-input-row">
+                    <label for="xuqiu"><span>·</span>您的需求</label>
+                    <input id="xuqiu" type="text" class="mui-input-clear" placeholder="简单描述您的具体要求" data-input-clear="5">
+                </div>
+            </div>
+            <div class="btn-contain">
+                <div class="btn-submit">提交预约</div>
+                <div class="btn-space"></div>
+                <div class="btn-reset">重新填写</div>
+            </div>
+            <div class="callPhone"><a href="tel:18635024586">点击拨打电话预约</a></div>
+        </div>
+    </div>
+    <script src="theme/mui/js/mui.js"></script>
+    <script src="theme/mui/js/mui.picker.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+    //日期选择器配置
+    let inputHolder=document.getElementById("datePlaceholder");
+    let dateInput=document.getElementById("date");
+    let now=new Date();
+    let year=now.getFullYear();
+    let month=now.getMonth();
+    let day=now.getDate()+7;
+    inputHolder.addEventListener("tap", function(){
+        let dtPicker=new mui.DtPicker({
+            "type":"hour",
+            "customData":{
+                "h":[
+                    {value:"am",text:"上午"},
+                    {value:"pm",text:"下午"}
+                ]
+            },
+            "beginDate":new Date(),
+            "endDate":new Date(year,month,day)
+        });
+        dtPicker.show(function(item){
+            dateInput.value=item.text
+        });
+    })
+    //表单验证&请求
+    let submit=document.getElementsByClassName("btn-submit")[0];
+    let reset=document.getElementsByClassName("btn-reset")[0];
+    submit.addEventListener("tap",function(e){
+        let name=document.getElementById("name").value;
+        let phone=document.getElementById("phone").value;
+        let date=document.getElementById("date").value;
+        let yuyue=document.getElementById("yuyue").value;
+        let xuqiu=document.getElementById("xuqiu").value;
+        if(name==''||name==null){
+            mui.alert("请输入名字");
+        }else if(phone==""||phone==null){
+             mui.alert("请输入联系电话");
+        }else if(!/^[1][3,4,5,7,8][0-9]{9}$/.test(phone)){
+            mui.alert("电话格式有误")
+        }else if(date==''||date==null){
+            mui.alert("请选择日期")
+        }else if(yuyue==""||yuyue==null){
+            mui.alert("请输入预约内容")
+        }else{
+            console.log("发送请求");
+            mui.ajax("",{
+                data:{
+                    "name":name,
+                    "phone":phone,
+                    "date":date,
+                    "yuyue":yuyue,
+                    "xuqiu":xuqiu
+                },
+                dateType:"json",
+                type:"post",
+                timeout:10000,
+                success:function(res){
+
+                }
+            })
+        }
+    },false)
+    reset.addEventListener("tap",function(){
+        document.getElementById("name").value='';
+        document.getElementById("phone").value='';
+        document.getElementById("date").value='';
+        document.getElementById("yuyue").value='';
+        document.getElementById("xuqiu").value='';
+    },false)
+    </script>
+</body>
+
+</html>
