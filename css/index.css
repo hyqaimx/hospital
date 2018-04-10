@@ -1,8 +1,9 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 html{font-size: 100px;}
-body{background: #F5F5F5;}
+body{background: #F5F5F5;max-width: 450px;margin: 0 auto;max-height: 800px;}
+nav{max-width: 450px;margin: 0 auto;}
 .main-entry{display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: .8rem .8rem;grid-gap: .08rem;background: #F5F5F5;}
-.entry{display: flex;align-items: center;font-size: .16rem;padding-left: .1rem;background: #FEFEFE;box-shadow: 0 0 5px #DCDCDC;}
+.entry{display: flex;align-items: center;font-size: .16rem;padding-left: .1rem;background: #FEFEFE;box-shadow: 0 0 5px #DCDCDC;color: #333;}
 .entry-right{flex: 1;padding: .08rem;}
 .entry-right img{display: block; width: .45rem;height: .45rem;margin: 0 auto;}
 /*拨打电话*/
@@ -14,6 +15,8 @@ body{background: #F5F5F5;}
 .call-btn{border-radius: 20px;border:2px solid #08a4ee;color: #08a4ee;line-height: .24rem;padding: 0rem .1rem;text-align: center;font-size: .14rem;font-weight: bold;}
 /*专家团队*/
 .doctor{display: flex;align-items: center;padding: .08rem .1rem;padding-bottom: .25rem;}
+.getMore{font-size: .15rem;color: #AAA;}
+.getMore i{font-size: .2rem;}
 #img{width: 1.3rem;max-height: 1.8rem;margin-right: .1rem;}
 .doctor-info{flex: 1;max-height: 1.8rem;overflow: hidden;}
 .doctor-info p{margin: 0;font-size: .14rem;color: #333;font-weight: bold;text-overflow: ellipsis;word-wrap: wrap;}
@@ -29,13 +32,14 @@ body{background: #F5F5F5;}
 .patient-info div{overflow:hidden;text-overflow: ellipsis;white-space: nowrap;font-size: .15rem;font-weight: 600;}
 .bottom-padding{height: 50px;}
 .patient-id{margin-bottom: .25rem;color: #AAA;text-align: center;}
-.patient-entry{border-radius: 20px;border:2px solid #08a4ee;color: #08a4ee;line-height: .24rem;padding: 0rem .1rem;text-align: center;font-size: .14rem;font-weight: bold;}
+.patient-entry{border-radius: 20px;border:2px solid #08a4ee;color: #08a4ee;line-height: .24rem;padding: .03rem .1rem;text-align: center;font-size: .14rem;font-weight: bold;}
 /*主推科室*/
 .depart{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: .1rem;grid-row-gap: .1rem;padding: .1rem;}
 .img{width: 1rem;height: 1rem; max-width: 1rem;background: #F34347;margin:0 auto;border-radius: 5px;}
-.depart-name{text-align: center;font-size: .16rem;margin-top: .05rem;}
+.depart-name{text-align: center;font-size: .16rem;margin-top: .05rem;color: #333;}
 /*修改mui*/
-.mui-card{margin: 0;border-radius: 0;margin-top: .08rem;box-shadow: 0 0 3px #DCDCDC;}
+.mui-card{margin: 0 auto; border-radius: 0;margin-top: .08rem;box-shadow: 0 0 3px #DCDCDC;}
 .mui-card-header{padding: .08rem .1rem;min-height: auto;}
 .mui-card-header p{font-weight: 600;margin-bottom: 0;font-size: .16rem;color: #333;}
 .mui-card-header p span{font-weight: 500;}
+#slider2 .mui-slider-group .mui-slider-item > a:not(.mui-control-item){line-height: inherit;display: flex;}

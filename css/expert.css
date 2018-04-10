@@ -1,6 +1,7 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 html{font-size: 100px;}
-body{background: white;}
+body{background: #F5F5F5;max-width: 450px;margin: 0 auto;max-height: 800px;}
+nav{max-width: 450px;margin: 0 auto;}
 /*顶部轮播*/
 .slider-contain{padding: .1rem;background: white;padding-bottom: 0;}
 .slider-title{font-size: .16rem;font-weight: bold;margin-bottom: .05rem;}
@@ -11,7 +12,7 @@ body{background: white;}
 .type-active{color: #333;font-weight: bold;}
 .type-active:after{content: "";position: absolute;width: .1rem;height:2px;background: #333;bottom: -.05rem;left: 50%;transform: translateX(-50%); }
 /*专家列表*/
-.grid-contain{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-gap: .05rem;padding:.05rem;font-size: .15rem;position: relative;}
+.grid-contain{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-gap: .05rem;padding:.05rem;font-size: .15rem;position: relative;background: white;}
 .grid-contain span{position: absolute;top: .1rem;left: 50%;transform: translateX(-50%);}
 .grid-item img{display: block; width: 100%;max-height: 1.5rem;max-width: 1.15rem; border-radius: 5px;margin: 0 auto;}
 .expert-name{font-weight: bold;color: #333;}
